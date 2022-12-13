@@ -32,8 +32,8 @@
 
             <form method="POST">
               {{ add_location.hidden_tag() }}
-              <input type="submit" class="up" name="{{ location.name }}" value=&#8599;> <!-- set name attribute here -->
-              <input type="submit" class="del" name="{{ location.name }}" value="X"> <!-- set name attribute here -->
+              <input type="submit" class="up" name="{{ location.name }}" value="Move"> <!-- set name attribute here -->
+              <input type="submit" class="del" name="{{ location.name }}" value="Delete"> <!-- set name attribute here -->
             </form>
             <!-- end if statement here -->
           {% endif %}

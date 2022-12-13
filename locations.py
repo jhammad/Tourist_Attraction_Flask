@@ -18,16 +18,19 @@ class Locations:
     def get_list_by_category(self, category):
         locs = []
         for i, location in enumerate(self.locations):
+            print(i, " ", "list by category")   
             if location.category == category:
                 locs.append(location)
         return locs
 
     def delete(self, name):
         i = self.get_index_by_name(name)
+        print(i, " " , "delete")
         self.locations.pop(i)
 
     def moveup(self, name):
         i = self.get_index_by_name(name)
+        print(i, " " , "move up")
         if self.locations[i].category == "recommended":
             self.locations[i].category = "tovisit"
         elif self.locations[i].category == "tovisit":
